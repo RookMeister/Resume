@@ -291,12 +291,12 @@ a:hover {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 60px;
 }
 .meals__item {
   position: relative;
   color: #fff;
-  width: 20%;
 }
 .meals__image {
   width: 100%;
