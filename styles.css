@@ -26,8 +26,10 @@ a:hover {
 }
 .logo__img {
   width: 100%;
+  height: auto;
 }
 .section-title {
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
   display: flex;
@@ -47,6 +49,21 @@ a:hover {
 }
 .section-title--meals {
   margin-bottom: 50px;
+  font-size: 19.55px;
+}
+.reviews-controll__item {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+}
+.reviews-controll__item--active,
+.reviews-controll__item:hover {
+  background-color: #fff;
 }
 .main-menu {
   margin-left: auto;
@@ -70,18 +87,21 @@ a:hover {
 }
 .button-menu {
   display: none;
-  list-style: none;
-  margin: 0;
-  padding: 10px 0 0;
-  text-align: right;
   position: absolute;
   right: 0;
+  list-style: none;
+  text-align: right;
+  padding: 10px 0 0;
+  margin: 0;
+}
+.button-menu--open {
+  display: block;
 }
 .button-menu__link {
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 10px 40px;
   display: block;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.4);
 }
 .button-menu__link:hover {
   background-color: #eee;
@@ -154,12 +174,11 @@ a:hover {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  list-style: none;
 }
 .features__item {
-  width: 360px;
-  padding: 0 10px;
+  list-style: none;
   text-align: center;
+  width: 360px;
 }
 .features__item:before {
   content: "";
@@ -167,11 +186,10 @@ a:hover {
   height: 107px;
   border: 1px solid #000;
   border-radius: 50%;
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
   display: inline-block;
-  margin-bottom: 20px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .features__item--burger:before {
   background-image: url('images/burger@2x.png');
@@ -190,14 +208,14 @@ a:hover {
   color: #8b8b8b;
 }
 .app {
-  padding: 180px 10% 0;
   background-color: #f7f7f7;
+  padding: 180px 10% 0;
   height: 700px;
   display: flex;
 }
 .app__image {
   width: 523px;
-  background-image: url('images/iphone@2x.png');
+  background-image: url(images/iphone@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -215,20 +233,137 @@ a:hover {
   margin: 0 0 30px;
 }
 .app__link {
-  display: inline-block;
-  margin-right: 10px;
-  text-indent: -9999px;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  display: inline-block;
+  margin-right: 10px;
+  /* hide text */
+  text-indent: -9999px;
+  overflow: hidden;
 }
 .app__link--appstore {
+  background-image: url('images/appstore@2x.png');
   width: 112px;
   height: 39px;
-  background-image: url('images/appstore@2x.png');
 }
 .app__link--googleplay {
+  background-image: url('images/googleplay@2x.png');
   width: 120px;
   height: 39px;
-  background-image: url('images/googleplay@2x.png');
+}
+.reviews {
+  background-color: #493647;
+  background-image: url('images/review-bg@2x.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 85px 0;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.reviews__avatar {
+  width: 104px;
+  height: 104px;
+  margin-bottom: 30px;
+}
+.reviews__text {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 30px;
+}
+.reviews__author {
+  font-size: 18px;
+  line-height: 36px;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+.reviews__author:before,
+.reviews__author:after {
+  content: "-";
+  margin: 0 5px;
+}
+.meals {
+  padding: 100px 0 50px;
+}
+.meals__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.meals__item {
+  position: relative;
+  color: #fff;
+  width: 20%;
+}
+.meals__image {
+  width: 100%;
+  height: 100%;
+}
+.meals__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+}
+.meals__title {
+  font-size: 3vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.meals__count {
+  font-size: 1vw;
+  line-height: 30px;
+  font-style: italic;
+  letter-spacing: 0.7px;
+}
+.recipes-counter {
+  color: #000;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  margin: 0;
+}
+.recipes-counter__title {
+  font-size: 3.2vw;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 0 12px;
+}
+.recipes-counter__description {
+  font-size: 1.3vw;
+  line-height: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer {
+  height: 93px;
+  background-color: #f7f7f7;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  font-size: 1.2vw;
+}
+.footer__copyright {
+  color: rgba(139, 139, 139, 0.5);
+  margin: 0;
+}
+.footer__design {
+  margin: 0;
+  margin-left: auto;
+  text-transform: uppercase;
+  color: #8b8b8b;
+}
+.footer__link {
+  color: #000;
+  text-decoration: none;
+  margin-left: 5px;
 }
