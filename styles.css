@@ -322,21 +322,6 @@ a:hover {
   font-style: italic;
   letter-spacing: 0.7px;
 }
-@media screen and (max-width: 240px) {
-  .meals__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-    justify-content: center;
-  }
-  .meals__item {
-    position: relative;
-    color: #fff;
-  }
-}
 .recipes-counter {
   color: #000;
   list-style: none;
