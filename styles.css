@@ -134,6 +134,9 @@ a:hover {
   margin: 0 0 40px;
   text-align: center;
 }
+@media screen and (max-width: 420px) {
+  font-size: 3vw;
+}
 .main__title-big {
   display: block;
   color: #fff;
@@ -214,20 +217,12 @@ a:hover {
   display: flex;
 }
 .app__image {
-  width: 100%;
+  width: 523px;
   background-image: url(images/iphone@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   margin-top: -80px;
-}
-@media screen and (max-width: 420px) {
-  .app__image {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    margin-top: -80px;
-  }
 }
 .app__content {
   width: 543px;
