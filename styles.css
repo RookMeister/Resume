@@ -135,7 +135,14 @@ a:hover {
   text-align: center;
 }
 @media screen and (max-width: 420px) {
-  font-size: 3vw;
+  .main__title-big {
+    display: block;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 5vw;
+    font-style: normal;
+    text-transform: uppercase;
+  }
 }
 .main__title-big {
   display: block;
