@@ -214,12 +214,20 @@ a:hover {
   display: flex;
 }
 .app__image {
-  width: 523px;
+  width: 100%;
   background-image: url(images/iphone@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   margin-top: -80px;
+}
+@media screen and (max-width: 420px) {
+  .app__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: -80px;
+  }
 }
 .app__content {
   width: 543px;
