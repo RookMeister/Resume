@@ -134,18 +134,25 @@ a:hover {
   margin: 0 0 40px;
   text-align: center;
 }
-@media only screen and (max-width : 320px) {
+@media screen and (max-width: 420px) {
   .main__title-big {
-    font-size: 1px;
+    display: block;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: auto;
+    font-style: normal;
+    text-transform: uppercase;
   }
 }
-.main__title-big {
-  display: block;
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  font-size: 100px;
-  font-style: normal;
-  text-transform: uppercase;
+@media screen and (min-width: 420px) {
+  .main__title-big {
+    display: block;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    text-transform: uppercase;
+  }
 }
 /* main__button */
 .main__button {
