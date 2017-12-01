@@ -317,7 +317,7 @@ a:hover {
   margin: 0;
 }
 .meals__count {
-  font-size: calc(17px);
+  font-size: calc(16px + 1vw);
   line-height: 30px;
   font-style: italic;
   letter-spacing: 0.7px;
