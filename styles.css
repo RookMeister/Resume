@@ -467,7 +467,7 @@ a:hover {
   font-style: italic;
   letter-spacing: 0.7px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 660px) {
   .meals {
     padding: 30px 0 50px;
   }
@@ -526,7 +526,7 @@ a:hover {
   padding: 0;
   text-align: center;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 660px) {
   .recipes-counter {
     display: none;
   }
