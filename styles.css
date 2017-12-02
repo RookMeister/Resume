@@ -63,6 +63,12 @@ a:hover {
   margin-bottom: 50px;
   font-size: 1.55vw;
 }
+@media screen and (max-width: 720px) {
+  .section-title--meals {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+}
 .reviews-controll__item {
   cursor: pointer;
   width: 10px;
@@ -141,6 +147,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 0 10%;
+  text-align: center;
 }
 /* main__title */
 @media screen and (max-width: 420px) {
@@ -169,7 +176,6 @@ a:hover {
     font-size: 10px;
     line-height: 30px;
     text-transform: uppercase;
-    text-align: center;
   }
   .main__button {
     display: flex;
@@ -283,7 +289,10 @@ a:hover {
     list-style: none;
     text-align: center;
     width: 360px;
-    margin: 0 0 10px;
+    margin: 0 0 20px;
+  }
+  .features {
+    padding: 40px 10%;
   }
 }
 .app {
@@ -330,6 +339,30 @@ a:hover {
   width: 120px;
   height: 39px;
 }
+@media screen and (max-width: 1080px) {
+  .app__image {
+    display: none;
+    position: relative;
+  }
+  .app__content {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .app {
+    background-color: #f7f7f7;
+    padding: 10% 10% 0;
+    height: 600px;
+    display: flex;
+  }
+}
+@media screen and (max-width: 420px) {
+  .app {
+    background-color: #f7f7f7;
+    padding: 10% 10% 0;
+    height: 650px;
+    display: flex;
+  }
+}
 .reviews {
   background-color: #493647;
   background-image: url('images/review-bg@2x.png');
@@ -346,12 +379,12 @@ a:hover {
   margin-bottom: 30px;
 }
 .reviews__text {
-  font-size: 3vw;
+  font-size: 36px;
   line-height: 36px;
   margin: 0 0 30px;
 }
 .reviews__author {
-  font-size: 1.5vw;
+  font-size: 18px;
   line-height: 36px;
   font-style: italic;
   margin-bottom: 40px;
@@ -360,6 +393,39 @@ a:hover {
 .reviews__author:after {
   content: "-";
   margin: 0 5px;
+}
+@media screen and (max-width: 420px) {
+  .reviews {
+    background-color: #493647;
+    background-image: url('images/review-bg@2x.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 85px 0;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  .reviews__avatar {
+    width: 104px;
+    height: 104px;
+    margin-bottom: 30px;
+  }
+  .reviews__text {
+    font-size: 16px;
+    line-height: 36px;
+    margin: 0 0 30px;
+  }
+  .reviews__author {
+    font-size: 8px;
+    line-height: 36px;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+  .reviews__author:before,
+  .reviews__author:after {
+    content: "-";
+    margin: 0 5px;
+  }
 }
 .meals {
   padding: 100px 0 50px;
@@ -401,6 +467,42 @@ a:hover {
   font-style: italic;
   letter-spacing: 0.7px;
 }
+@media screen and (max-width: 720px) {
+  .meals {
+    padding: 30px 0 50px;
+  }
+  .meals__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+  .meals__item {
+    position: relative;
+    color: #fff;
+    width: 320px;
+    height: 225px;
+  }
+  .meals__image {
+    width: 100%;
+    height: 100%;
+  }
+  .meals__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .meals__count {
+    font-size: 16px;
+    line-height: 30px;
+    font-style: italic;
+    letter-spacing: 0.7px;
+  }
+}
 .recipes-counter {
   color: #000;
   list-style: none;
@@ -423,6 +525,11 @@ a:hover {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+@media screen and (max-width: 720px) {
+  .recipes-counter {
+    display: none;
+  }
 }
 .footer {
   height: 93px;
