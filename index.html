@@ -21,8 +21,8 @@
                     <label for="checkbox-button-menu">&#x2630</label>
                     <input id="checkbox-button-menu" type="checkbox" hidden>
                     <ul class="button-menu">
-                        <li class="button-menu__link"><a href="#">Contact</a></li>
-                        <li class="button-menu__link"><a href="#">About</a></li>
+                        <li class="button-menu__link"><a href="#footer">Contact</a></li>
+                        <li class="button-menu__link"><a href="#footer">About</a></li>
                     </ul>
                 </li>
             </ul>
@@ -68,17 +68,36 @@
         </div>
     </section>
     <section class="reviews">
-        <img src="images/avatar@2x.png" alt="" class="reviews__avatar">
-        <p class="reviews__text">I am so happy because Ifound this recipe, and it just made my life easier.
-            <br>
-            Thanks so much for sharing!
-        </p>
-        <div class="reviews__author">Michael Dawson, San Francisco, CA</div>
-        <nav class="reviews-controll">
-            <span class="reviews-controll__item reviews-controll__item--active"></span>
-            <span class="reviews-controll__item"></span>
-            <span class="reviews-controll__item"></span>
-        </nav> <!-- reviews-controll -->
+            <input id="tab1" type="radio" name="tabs" checked>
+            <input id="tab2" type="radio" name="tabs">
+            <input id="tab3" type="radio" name="tabs">
+        <section id="reviews__first">
+            <img src="images/avatar@2x.png" alt="" class="reviews__avatar">
+            <p class="reviews__text">Текст для одного человека. Привет.
+                <br>
+                Thanks so much for sharing!
+            </p>
+            <div class="reviews__author">Michael Dawson, San Francisco, CA</div>
+        </section>
+        <section id="reviews__second">
+            <img src="images/avatar@2x.png" alt="" class="reviews__avatar">
+            <p class="reviews__text">Здесь будет другой текст для проверки.
+                <br>
+                Thanks so much for sharing!
+            </p>
+            <div class="reviews__author">Michael Dawson, New York, NY</div>
+        </section>
+        <section id="reviews__third">
+            <img src="images/avatar@2x.png" alt="" class="reviews__avatar">
+            <p class="reviews__text">Ну и бог любит троицу конечно.
+                <br>
+                Thanks so much for sharing!
+            </p>
+            <div class="reviews__author">Michael Dawson, Los-Angeles, CA</div>         
+        </section>
+            <label id="reviews-controll__item1" for="tab1"></label>
+            <label id="reviews-controll__item2" for="tab2"></label>
+            <label id="reviews-controll__item3" for="tab3"></label>
     </section> <!-- reviews -->
     <section class="meals">
         <h1 class="section-title section-title--meals">BROWSE BY CUISINER</h3>
@@ -177,9 +196,22 @@
                 </li>
             </ul>
     </section> <!-- meals -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <p class="footer__copyright">&copy2014 Fudi. All Right Reserved.</p>
         <p class="footer__design">DESING BY: <a href="#" class="footer__link">WWW.BEKADES.COM</a></p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a[href*=#]").on("click", function (e) {
+          var anchor = $(this);
+          $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+          }, 777);
+          e.preventDefault();
+          return false;
+        });
+      });
+    </script>
 </body>
 </html>
