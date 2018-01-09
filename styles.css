@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 auto;
+  position: relative;
+}
+h2 {
+  font-size: 24px;
+}
+p {
+  font-size: 18px;
+}
+.header {
+  height: 230px;
+  background: #4b5eaa;
+}
+.header__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: url(img/avatar.jpg) no-repeat;
+  background-size: auto 150px;
+  position: absolute;
+  margin: 40px 75px 40px 75px;
+}
+.header__info {
+  padding: 70px 0px 0px 300px;
+  color: #fff;
+}
+.header__info > h {
+  font-size: 40px;
+  font-weight: bold;
+}
+.header__info > p {
+  font-size: 24px;
+}
+.header__contacts {
+  margin: -105px 0px 0px 900px;
+}
+.header__contacts--list {
+  list-style-type: none;
+  height: 30px;
+}
+.header__contacts--items {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+.header__contacts--items--img {
+  height: auto;
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.content {
+  display: flex;
+}
+.content__skills {
+  margin: 5px;
+  border-radius: 19px;
+  display: inline-block;
+  background: #4b5eaa;
+  color: #fff;
+}
+.content__skills > p {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+.content__item--info {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+}
+.content__item--info.skills {
+  flex-wrap: wrap;
+}
+.content--info {
+  padding: 0px 30px;
+  word-wrap: break-word;
+}
+.content__item {
+  padding: 30px 20px 20px 50px;
+}
+.content__list {
+  list-style-image: url(img/circle.png);
+  padding: 20px 20px;
+}
+.content__list > li {
+  padding: 10px 0px;
+}
+.content__list > li > p {
+  color: #4b5eaa;
+}
+.content__list.work:before {
+  content: "2015 - 2017";
+  color: #666;
+}
+.content__list.work:after {
+  content: "Юманс - ВЦ";
+  color: #666;
+}
+.content__list.education1:before {
+  content: "2011 - 2015";
+  color: #666;
+}
+.content__list.education1:after {
+  content: "Математика и компьютерные науки";
+  color: #666;
+}
+.content__list.education2:before {
+  content: "2015 - 2017";
+  color: #666;
+}
+.content__list.education2:after {
+  content: "Прикладная математика и информатика";
+  color: #666;
+}
+.content__marker {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 20px 0px;
+}
+.content__marker.profile:before {
+  margin-right: 20px;
+  background-image: url(img/info.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.content__marker.interested:before {
+  margin-right: 20px;
+  background-image: url(img/inter.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.content__marker.awwards:before {
+  margin-right: 20px;
+  background-image: url(img/awwards.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.content__marker.work:before {
+  margin-right: 20px;
+  background-image: url(img/case.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.content__marker.education:before {
+  margin-right: 20px;
+  background-image: url(img/education.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.content__marker.skills:before {
+  margin-right: 20px;
+  background-image: url(img/skills.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.content__marker:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background-size: 50%;
+  background: #4b5eaa;
+}
+.content__sidebar {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  background: #fbfbfb;
+}
+.content__sidebar__list {
+  display: flex;
+}
+.content__sidebar__interested {
+  list-style: none;
+  text-align: center;
+}
+.content__sidebar__interested:before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  background-size: 50%;
+  border: 2px solid #4b5eaa;
+}
+.content__sidebar__interested.code:before {
+  background-image: url(img/code.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content__sidebar__interested.gaming:before {
+  background-image: url(img/game.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content__sidebar__interested.soccer:before {
+  background-image: url(img/soccer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content__main {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  width: 950px;
+}
