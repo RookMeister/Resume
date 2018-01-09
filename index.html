@@ -3,215 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find your favorite recipes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>Резюме</title>
 </head>
 <body>
-    <header class="header">
-        <a href="/" class="logo">
-            <img src="images/logo.png" alt="logo" class="logo__img">
-        </a>
-        <nav class="main-menu">
-            <ul class="main-menu__list">
-                <li class="main-menu__item"><a href="#" class="main-menu__link">LOG IN</a></li>
-                <li class="main-menu__item"><a href="#" class="main-menu__link">SIGN UP</a></li>
-                <li class="main-menu__item">
-                    <label for="checkbox-button-menu">&#x2630</label>
-                    <input id="checkbox-button-menu" type="checkbox" hidden>
-                    <ul class="button-menu">
-                        <li class="button-menu__link"><a href="#footer">Contact</a></li>
-                        <li class="button-menu__link"><a href="#footer">About</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header> <!-- /. header -->
-
-    <section class="main">
-        <h1 class="main__title">Find your favarite <span class="main__title-big">recipes</span></h1>
-        <a href="#app" class="main__button">GET STARTED</a>
-        <p class="main__description">or send your own recipes <a href="#">get rewarder</a>!</p>
-    </section>  <!-- /. main -->
-
-
-    <section class="features">
-        <ul class="features__list">
-            <li class="features__item features__item--burger">
-                <h3 class="section-title">GET INSPIRED</h3>
-                <p class="features__description">orem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora sint in doloribus quasi qui quibusdam impedit cum molestiae voluptatum minus enim, nihil nesciunt, accusantium exercitationem ipsum asperiores veniam. Vitae.</p>
-            </li>
-            <li class="features__item features__item--money">
-                <h3 class="section-title">GET REWARDED</h3>
-                <p class="features__description">orem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora sint in doloribus quasi qui quibusdam impedit cum molestiae voluptatum minus enim, nihil nesciunt, accusantium exercitationem ipsum asperiores veniam. Vitae.</p>
-            </li>
-            <li class="features__item features__item--man">
-                <h3 class="section-title">GET SOCIAL</h3>
-                <p class="features__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora sint in doloribus quasi qui quibusdam impedit cum molestiae voluptatum minus enim, nihil nesciunt, accusantium exercitationem ipsum asperiores veniam. Vitae.</p>
-            </li>
-        </ul>
-    </section> <!-- /. features -->
-    <section class="app" id="app">
-        <div class="app__image"></div>
-        <div class="app__content">
-            <h1 class="section-title section-title--left">INTRODUCING THE FUDI APP</h1>
-            <p class="app__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ad error qui eius in quaerat facere incidunt voluptas cum, ab necessitatibus sequi? Totam, repellat eaque rerum eos reprehenderit praesentium nostrum.
-                </p>
-            <p class="app__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ad error qui eius in quaerat facere incidunt voluptas cum, ab necessitatibus sequi? Totam, repellat eaque rerum eos reprehenderit praesentium nostrum.
-                </p>
-            <p class="app__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ad error qui eius in quaerat facere incidunt voluptas cum, ab necessitatibus sequi? Totam, repellat eaque rerum eos reprehenderit praesentium nostrum.</p>
-            <p class="app__description">
-                <a href="#" class="app__link app__link--appstore">App Store</a>
-                <a href="#" class="app__link app__link--googleplay">Google Play</a>
-            </p>
-        </div>
+    <section class="body">
+        <header class="header">
+            <div class="header__avatar"></div>
+            <section class="header__info">
+                <h>Хмель Артём</h>
+                <p>Веб-программист</p>
+            </section>
+            <nav class="header__contacts">
+                <ul>
+                    <li class="header__contacts--list"><a href="" class="header__contacts--items"><p><img class="header__contacts--items--img" src="img/map.png" alt="">Владивосток</p></a></li>
+                    <li class="header__contacts--list"><a href="" class="header__contacts--items"><p><img class="header__contacts--items--img" src="img/mail.png" alt="">artemhmel6@gmail.com</p></a></li>
+                    <li class="header__contacts--list"><a href="https://vladivostok.hh.ru/resume/feea7bb7ff02777ba90039ed1f52746f533730" class="header__contacts--items" target="blank"><p><img class="header__contacts--items--img" src="img/hh.png" alt="">HeadHunter</p></a></li>
+                    <li class="header__contacts--list"><a href="" class="header__contacts--items"><p><img class="header__contacts--items--img" src="img/GitHub.png" alt="">GitHub</p></a></li>
+                    <li class="header__contacts--list"><a href="" class="header__contacts--items"><p><img class="header__contacts--items--img" src="img/phone.png" alt="">+79146705821</p></a></li>
+                </ul>
+            </nav>
+        </header>
+        <content class="content">
+            <aside class="content__sidebar">
+                <section class="content__item">
+                        <div class="content__marker profile">
+                            <h2>Обо мне</h2>
+                        </div>
+                        <p>Интересуюсь современными технологиями‚ как игровой индустрии, так и широкого спектра современного рынка программного обеспечения и электроники.
+                            Занимаюсь сборкой, настройкой и оптимизацией ПК.
+                            Увлекаюсь футболом и различными интеллектуальными играми.
+                        </p>
+                </section>
+                <section class="content__item">
+                        <div class="content__marker interested">
+                            <h2>Увлечения</h2>
+                        </div>
+                        <ul class="content__sidebar__list">
+                            <li class="content__sidebar__interested gaming">
+                                <b>Игры</b>
+                            </li>
+                            <li class="content__sidebar__interested code">
+                                <b>Программирование</b>
+                            </li>
+                            <li class="content__sidebar__interested soccer">
+                                <b>Футбол</b>
+                            </li>
+                        </ul>
+                </section>
+                <section class="content__item">
+                        <div class="content__marker awwards">
+                            <h2>Достижения</h2>
+                        </div>
+                        <ul class="content__list">
+                            <h3>Сертификаты 1С:</h3>
+                            <li><p><b>1С ПРОФЕССИОНАЛ ОТ 7.07.15<br>(1С БУХГАЛТЕРИЯ 8)</b></p></li>
+                            <li><p><b>1С СПЕЦИАЛИСТ-КОНТСУЛЬТАНТ ОТ 4.08.16<br>(1С БУХГАЛТЕРИЯ 8)</b></p></li>
+                        </ul>
+                </section>
+            </aside>
+            <section class="content__main">
+                <section class="content__item">
+                    <div class="content__marker work">
+                        <h2>Опыт работы</h2>
+                    </div>
+                    <div class="content__item--info">
+                        <ul class="content__list work">
+                            <li><p><b>Консультант 1С</b></p></li>
+                        </ul>
+                        <div class="content--info"></div>
+                        <p>
+                            Обязанности:<br>
+                            1.Консультирование клиентов по программе 1С<br>
+                            2.Установка программы и её настройка<br>
+                            3.Установка дополнительных сервисов от компании 1С и консультирование по этим сервисам<br>
+                            4.Исправление проблем в работе баз клиентов<br>
+                            5.Обновление программ<br>
+                            6.Заполнение отчетов о выполненной работе<br>
+                        </p>
+                    </div>
+                </section>
+                <section class="content__item">
+                    <div class="content__marker education">
+                        <h2>Образования</h2>
+                    </div>
+                    <div class="content__item--info">
+                        <ul class="content__list education1">
+                            <li><p><b>Дальневосточный федеральный университет (ДВФУ)</b></p></li>
+                        </ul>
+                        <div class="content--info">
+                            <p>Бакалавриат</p>
+                        </div>
+                    </div>
+                    <div class="content__item--info">
+                        <ul class="content__list education2">
+                            <li><p><b>Дальневосточный федеральный университет (ДВФУ)</b></p></li>
+                        </ul>
+                        <div class="content--info">
+                            <p>Магистратура</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content__item">
+                    <div class="content__marker skills">
+                        <h2>Профессиональные качества</h2>
+                    </div>
+                    <div class="content__item--info">
+                        <div class="content__skills"><p>HTML5&CSS3</p></div>
+                        <div class="content__skills"><p>JavaScript</p></div>
+                        <div class="content__skills"><p>PHP</p></div>
+                        <div class="content__skills"><p>Bootstrap</p></div>
+                        <div class="content__skills"><p>Less</p></div>
+                        <div class="content__skills"><p>jQuery</p></div>
+                        <div class="content__skills"><p>1C: Бухгалтерия</p></div>
+                        <div class="content__skills"><p>1С: Зарплата и управление персоналом</p></div>
+                        <div class="content__skills"><p>Администрирование и установка 1C</p></div>
+                        <div class="content__skills"><p>Настройка ПК</p></div>
+                        <div class="content__skills"><p>Желание учиться</p></div>
+                    </div>
+                </section>
+            </section>
+        </content>
     </section>
-    <section class="reviews">
-            <input id="tab1" type="radio" name="tabs" checked>
-            <input id="tab2" type="radio" name="tabs">
-            <input id="tab3" type="radio" name="tabs">
-        <section id="reviews__first">
-            <img src="images/avatar@2x.png" alt="" class="reviews__avatar">
-            <p class="reviews__text">Текст для одного человека. Привет.
-                <br>
-                Thanks so much for sharing!
-            </p>
-            <div class="reviews__author">Michael Dawson, San Francisco, CA</div>
-        </section>
-        <section id="reviews__second">
-            <img src="images/avatar@2x.png" alt="" class="reviews__avatar">
-            <p class="reviews__text">Здесь будет другой текст для проверки.
-                <br>
-                Thanks so much for sharing!
-            </p>
-            <div class="reviews__author">Michael Dawson, New York, NY</div>
-        </section>
-        <section id="reviews__third">
-            <img src="images/avatar@2x.png" alt="" class="reviews__avatar">
-            <p class="reviews__text">Ну и бог любит троицу конечно.
-                <br>
-                Thanks so much for sharing!
-            </p>
-            <div class="reviews__author">Michael Dawson, Los-Angeles, CA</div>         
-        </section>
-            <label class="reviews-controll__item" id="reviews-controll__item1" for="tab1"></label>
-            <label class="reviews-controll__item" id="reviews-controll__item2" for="tab2"></label>
-            <label class="reviews-controll__item" id="reviews-controll__item3" for="tab3"></label>
-    </section> <!-- reviews -->
-    <section class="meals">
-        <h1 class="section-title section-title--meals">BROWSE BY CUISINER</h3>
-            <ul class="meals__list">
-                <li class="meals__item">
-                    <img src="images/meals/italian.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-                <li class="meals__item">
-                    <img src="images/meals/indian.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-                <li class="meals__item">
-                    <img src="images/meals/french.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-                <li class="meals__item">
-                    <img src="images/meals/steakhouse.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-                <li class="meals__item">
-                    <img src="images/meals/seafood.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-                <li class="meals__item">
-                    <img src="images/meals/suchi.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-                <li class="meals__item">
-                    <img src="images/meals/mexican.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-                <li class="meals__item">
-                    <img src="images/meals/chinese.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-                <li class="meals__item">
-                    <img src="images/meals/pizza.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-                <li class="meals__item">
-                    <img src="images/meals/american.jpg" alt="" class="meals__image">
-                    <div class="meals__content">
-                        <div class="meals__count">127 Recipes</div>
-                        <div class="meals__title">Italian</div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="recipes-counter">
-                <li class="recipes-conter__item">
-                    <h3 class="recipes-counter__title">23,567</h3>
-                    <p class="recipes-counter__description">Recipes Available</p>
-                </li>
-                <li class="recipes-conter__item">
-                    <h3 class="recipes-counter__title">431,729</h3>
-                    <p class="recipes-counter__description">Active Users</p>
-                </li>
-                <li class="recipes-conter__item">
-                    <h3 class="recipes-counter__title">892,173</h3>
-                    <p class="recipes-counter__description">Positive Reviews</p>
-                </li>
-                <li class="recipes-conter__item">
-                    <h3 class="recipes-counter__title">56,581</h3>
-                    <p class="recipes-counter__description">Photos & Videos</p>
-                </li>
-                <li class="recipes-conter__item">
-                    <h3 class="recipes-counter__title">3,182</h3>
-                    <p class="recipes-counter__description">Spices and Herbs</p>
-                </li>
-            </ul>
-    </section> <!-- meals -->
-    <footer class="footer" id="footer">
-        <p class="footer__copyright">&copy2014 Fudi. All Right Reserved.</p>
-        <p class="footer__design">DESING BY: <a href="#" class="footer__link">WWW.BEKADES.COM</a></p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("a[href*=#]").on("click", function (e) {
-          var anchor = $(this);
-          $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-          }, 777);
-          e.preventDefault();
-          return false;
-        });
-      });
-    </script>
 </body>
 </html>
