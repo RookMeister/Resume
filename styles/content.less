@@ -5,17 +5,20 @@
     &__main{
         display: flex;
         flex-wrap: wrap;
-        height: 750px;
-        width: 1080px;
-        overflow: scroll; 
+        height: 800px;
+        width: 950px;
+        overflow-x: hidden;
+        overflow-y: scroll; 
     }
 
     &__main.portfolio{
-        justify-content: center;
+        display: block;
     }
 
+    &__main::-webkit-scrollbar{width: 0px;}
+
     &__item{
-        padding: 10px 20px 0 50px;
+        padding: 20px 20px 0 50px;
         text-align: left;
     }
 
