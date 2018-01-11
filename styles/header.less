@@ -1,6 +1,11 @@
 .header{
-    height: 230px;
+    height: 220px;
+    width: 100%;
     background: #4b5eaa;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 
     &__avatar{
         width: 150px;
@@ -8,13 +13,13 @@
         border-radius: 50%;
         background: url(img/avatar.jpg) no-repeat;
         background-size: auto 150px;
-        position: absolute;
-        margin:  40px 75px 40px 75px;
     }
 
     &__info{
-        padding: 70px 0px 0px 300px;
+        padding: 0 10%;
         color: #fff;
+        display: block;
+        text-align: center;
     }
 
     &__info>h{
@@ -26,8 +31,6 @@
     }
 
     &__contacts{
-        margin: -105px 0px 0px 900px;
-
         &--list{
             list-style-type: none;
             height: 30px;

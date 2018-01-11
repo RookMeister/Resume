@@ -4,11 +4,10 @@
   padding: 0;
 }
 body {
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
-  width: 1400px;
   margin: 0 auto;
   padding: 0 auto;
-  position: relative;
 }
 h2 {
   font-size: 24px;
@@ -17,8 +16,13 @@ p {
   font-size: 18px;
 }
 .header {
-  height: 230px;
+  height: 220px;
+  width: 100%;
   background: #4b5eaa;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 .header__avatar {
   width: 150px;
@@ -26,12 +30,12 @@ p {
   border-radius: 50%;
   background: url(img/avatar.jpg) no-repeat;
   background-size: auto 150px;
-  position: absolute;
-  margin: 40px 75px 40px 75px;
 }
 .header__info {
-  padding: 70px 0px 0px 300px;
+  padding: 0 10%;
   color: #fff;
+  display: block;
+  text-align: center;
 }
 .header__info > h {
   font-size: 40px;
@@ -39,9 +43,6 @@ p {
 }
 .header__info > p {
   font-size: 24px;
-}
-.header__contacts {
-  margin: -105px 0px 0px 900px;
 }
 .header__contacts--list {
   list-style-type: none;
@@ -58,142 +59,21 @@ p {
   vertical-align: middle;
   margin-right: 20px;
 }
-.content {
+.sidebar {
   display: flex;
-}
-.content__skills {
-  margin: 5px;
-  border-radius: 19px;
-  display: inline-block;
-  background: #4b5eaa;
-  color: #fff;
-}
-.content__skills > p {
-  text-align: center;
-  font-size: 16px;
-  padding: 10px;
-}
-.content__item--info {
-  display: flex;
-  align-items: center;
-  align-content: flex-start;
-}
-.content__item--info.skills {
   flex-wrap: wrap;
-}
-.content--info {
-  padding: 0px 30px;
-  word-wrap: break-word;
-}
-.content__item {
-  padding: 30px 20px 20px 50px;
-}
-.content__list {
-  list-style-image: url(img/circle.png);
-  padding: 20px 20px;
-}
-.content__list > li {
-  padding: 10px 0px;
-}
-.content__list > li > p {
-  color: #4b5eaa;
-}
-.content__list.work:before {
-  content: "2015 - 2017";
-  color: #666;
-}
-.content__list.work:after {
-  content: "Юманс - ВЦ";
-  color: #666;
-}
-.content__list.education1:before {
-  content: "2011 - 2015";
-  color: #666;
-}
-.content__list.education1:after {
-  content: "Математика и компьютерные науки";
-  color: #666;
-}
-.content__list.education2:before {
-  content: "2015 - 2017";
-  color: #666;
-}
-.content__list.education2:after {
-  content: "Прикладная математика и информатика";
-  color: #666;
-}
-.content__marker {
-  display: flex;
-  align-items: center;
-  padding: 0px 0px 20px 0px;
-}
-.content__marker.profile:before {
-  margin-right: 20px;
-  background-image: url(img/info.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-}
-.content__marker.interested:before {
-  margin-right: 20px;
-  background-image: url(img/inter.png);
-  background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-}
-.content__marker.awwards:before {
-  margin-right: 20px;
-  background-image: url(img/awwards.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-}
-.content__marker.work:before {
-  margin-right: 20px;
-  background-image: url(img/case.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-}
-.content__marker.education:before {
-  margin-right: 20px;
-  background-image: url(img/education.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-}
-.content__marker.skills:before {
-  margin-right: 20px;
-  background-image: url(img/skills.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-}
-.content__marker:before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: inline-block;
-  background-size: 50%;
-  background: #4b5eaa;
-}
-.content__sidebar {
   width: 450px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: stretch;
   background: #fbfbfb;
 }
-.content__sidebar__list {
+.sidebar__list {
   display: flex;
+  justify-content: center;
 }
-.content__sidebar__interested {
+.sidebar__interested {
   list-style: none;
   text-align: center;
 }
-.content__sidebar__interested:before {
+.sidebar__interested:before {
   content: "";
   width: 80px;
   height: 80px;
@@ -202,24 +82,233 @@ p {
   background-size: 50%;
   border: 2px solid #4b5eaa;
 }
-.content__sidebar__interested.code:before {
+.sidebar__interested.code:before {
   background-image: url(img/code.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.content__sidebar__interested.gaming:before {
+.sidebar__interested.gaming:before {
   background-image: url(img/game.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.content__sidebar__interested.soccer:before {
+.sidebar__interested.soccer:before {
   background-image: url(img/soccer.png);
   background-repeat: no-repeat;
   background-position: center;
 }
+.content {
+  display: flex;
+  width: 1400px;
+  height: 920px;
+}
 .content__main {
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
+  height: 860px;
+  width: 1000px;
+  overflow: scroll;
+}
+.content__main.portfolio {
+  justify-content: center;
+}
+.content__item {
+  padding: 30px 20px 20px 50px;
+  text-align: left;
+}
+.content--info {
+  padding: 0px 30px;
+}
+.content__item--info {
+  display: flex;
+  align-items: center;
+}
+.list {
+  list-style-image: url(img/circle.png);
+  padding: 20px 20px;
+}
+.list > li {
+  padding: 10px 0;
+}
+.list > li > p {
+  color: #4b5eaa;
+}
+.list.work--list:before {
+  content: "2015 - 2017";
+  color: #666;
+}
+.list.work--list:after {
+  content: "Юманс - ВЦ";
+  color: #666;
+}
+.list.education1--list:before {
+  content: "2011 - 2015";
+  color: #666;
+}
+.list.education1--list:after {
+  content: "Математика и компьютерные науки";
+  color: #666;
+}
+.list.education2--list:before {
+  content: "2015 - 2017";
+  color: #666;
+}
+.list.education2--list:after {
+  content: "Прикладная математика и информатика";
+  color: #666;
+}
+.list.education3--list:before {
+  content: "2017 - по настоящее время";
+  color: #666;
+}
+.list.education3--list:after {
+  content: "Веб-Разработчик";
+  color: #666;
+}
+.marker {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 20px 0px;
+}
+.marker.profile--marker:before {
+  margin-right: 20px;
+  background-image: url(img/info.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.marker.interested--marker:before {
+  margin-right: 20px;
+  background-image: url(img/inter.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.marker.awwards--marker:before {
+  margin-right: 20px;
+  background-image: url(img/awwards.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.marker.work--marker:before {
+  margin-right: 20px;
+  background-image: url(img/case.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.marker.education--marker:before {
+  margin-right: 20px;
+  background-image: url(img/education.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.marker.skills--marker:before {
+  margin-right: 20px;
+  background-image: url(img/skills.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.marker:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background-size: 50%;
+  background: #4b5eaa;
+}
+.item--skills {
+  margin: 5px;
+  border-radius: 19px;
+  display: inline-block;
+  background: #4b5eaa;
+  color: #fff;
+}
+.item--skills > p {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+.item__skills {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+/* Стили секций с содержанием */
+.tabs {
+  text-align: center;
   width: 950px;
+}
+.tabs > section {
+  display: none;
+  background: #fff;
+  /* прикрутим анимацию */
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Прячем чекбоксы */
+.tabs > input {
+  display: none;
+  position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs > label {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  color: #fff;
+  border-radius: 19px ;
+  background: #4b5eaa;
+  border: 0px solid #4b5eaa;
+  border-width: 1px 1px 1px 1px;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs > label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+.tabs > label:hover {
+  color: #000;
+  cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs > input:checked + label {
+  color: #4b5eaa;
+  background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked ~ #content-tab1,
+#tab2:checked ~ #content-tab2,
+#tab3:checked ~ #content-tab3,
+#tab4:checked ~ #content-tab4 {
+  display: block;
 }
