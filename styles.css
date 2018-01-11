@@ -111,9 +111,6 @@ p {
 .content__main::-webkit-scrollbar {
   width: 0px;
 }
-.content__main.portfolio {
-  justify-content: center;
-}
 .content__item {
   padding: 20px 20px 0 50px;
   text-align: left;
@@ -245,7 +242,7 @@ p {
 /* Стили секций с содержанием */
 .tabs {
   text-align: center;
-  width: 950px;
+  width: auto;
 }
 .tabs > section {
   display: none;
