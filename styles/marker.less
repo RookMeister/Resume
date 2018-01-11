@@ -1,0 +1,64 @@
+.marker{
+    display: flex;
+    align-items: center; 
+    padding: 0px 0px 20px 0px;
+
+    &.profile--marker:before {
+        margin-right: 20px;
+        background-image: url(img/info.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+
+    &.interested--marker:before {
+        margin-right: 20px;
+        background-image: url(img/inter.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+
+    &.awwards--marker:before {
+        margin-right: 20px;
+        background-image: url(img/awwards.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+
+    &.work--marker:before {
+        margin-right: 20px;
+        background-image: url(img/case.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+
+    &.education--marker:before {
+        margin-right: 20px;
+        background-image: url(img/education.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+
+    &.skills--marker:before {
+        margin-right: 20px;
+        background-image: url(img/skills.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+}
+
+.marker:before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-size: 50%;
+    background: #4b5eaa;
+}
