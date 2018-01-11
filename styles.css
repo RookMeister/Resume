@@ -32,7 +32,7 @@ p {
   background-size: auto 150px;
 }
 .header__info {
-  padding: 0 10%;
+  padding: 0 20%;
   color: #fff;
   display: block;
   text-align: center;
@@ -104,6 +104,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   height: 800px;
+  width: auto;
   overflow-x: hidden;
   overflow-y: scroll;
 }
