@@ -99,20 +99,20 @@ p {
 }
 .content {
   display: flex;
-  width: 1400px;
+  width: auto;
 }
 .content__main {
   display: flex;
   flex-wrap: wrap;
-  height: 750px;
-  width: 1080px;
-  overflow: scroll;
+  height: 800px;
+  width: auto;
+  overflow-y: scroll;
 }
 .content__main.portfolio {
   justify-content: center;
 }
 .content__item {
-  padding: 10px 20px 0 50px;
+  padding: 20px 20px 0 50px;
   text-align: left;
 }
 .content--info {
