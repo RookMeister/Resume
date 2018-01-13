@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="js/game.js" defer></script>
+    <script src="js/ticTacToe.js" defer></script>
+    <script src="js/snake.js" defer></script>
     <title>Резюме</title>
 </head>
 <body>
@@ -69,97 +70,113 @@
         <section class="tabs">
             <input id="tab1" type="radio" name="tabs" checked>
             <label for="tab1" title="Информация">Информация</label>
-                <input id="tab2" type="radio" name="tabs">
-                <label for="tab2" title="Портфолио">Портфолио</label>
-                <section id="content-tab1">
-                        <section class="content__main">
-                                <section class="content__item">
-                                    <div class="marker work--marker">
-                                        <h2>Опыт работы</h2>
-                                    </div>
-                                    <div class="content__item--info">
-                                        <ul class="list work--list">
-                                            <li><p><b>Консультант&nbsp;1С</b></p></li>
-                                        </ul>
-                                        <div class="content--info"></div>
-                                        <p>
-                                            Обязанности:<br>
-                                            1.Консультирование клиентов по программе 1С<br>
-                                            2.Установка программы и её настройка<br>
-                                            3.Установка дополнительных сервисов от компании 1С и консультирование по этим сервисам<br>
-                                            4.Исправление проблем в работе баз клиентов<br>
-                                            5.Обновление программ<br>
-                                            6.Заполнение отчетов о выполненной работе<br>
-                                        </p>
-                                    </div>
-                                </section>
-                                <section class="content__item">
-                                    <div class="marker education--marker">
-                                        <h2>Образования</h2>
-                                    </div>
-                                    <div class="content__item--info">
-                                        <ul class="list education1--list">
-                                            <li><p><b>Дальневосточный федеральный университет (ДВФУ)</b></p></li>
-                                        </ul>
-                                        <div class="content--info">
-                                            <p>Бакалавриат</p>
-                                        </div>
-                                    </div>
-                                    <div class="content__item--info">
-                                        <ul class="list education2--list">
-                                            <li><p><b>Дальневосточный федеральный университет (ДВФУ)</b></p></li>
-                                        </ul>
-                                        <div class="content--info">
-                                            <p>Магистратура</p>
-                                        </div>
-                                    </div>
-                                    <div class="content__item--info">
-                                        <ul class="list education3--list">
-                                            <li><p><b>GeekBrains</b></p></li>
-                                        </ul>
-                                        <div class="content--info">
-                                            <p>
-                                                1.HTML/CSS<br>
-                                                2.JavaScript. Уровень 1<br>
-                                                3.AngularJS/D3.js<br>
-                                                4.PHP. Уровень 1<br>
-                                                5.Основы веб-дизайна<br>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section class="content__item">
-                                    <div class="marker skills--marker">
-                                        <h2>Профессиональные качества</h2>
-                                    </div>
-                                    <!--skills-->
-                                    <div class="item__skills">
-                                        <div class="item--skills"><p>HTML5&CSS3</p></div>
-                                        <div class="item--skills"><p>JavaScript</p></div>
-                                        <div class="item--skills"><p>PHP</p></div>
-                                        <div class="item--skills"><p>Bootstrap</p></div>
-                                        <div class="item--skills"><p>Less</p></div>
-                                        <div class="item--skills"><p>jQuery</p></div>
-                                        <div class="item--skills"><p>1C: Бухгалтерия</p></div>
-                                        <div class="item--skills"><p>1С: Зарплата и управление персоналом</p></div>
-                                        <div class="item--skills"><p>Администрирование и установка 1C</p></div>
-                                        <div class="item--skills"><p>Настройка ПК</p></div>
-                                        <div class="item--skills"><p>Желание учиться</p></div>
-                                    </div>
-                                    <!--/skills-->
-                                </section>
-                            </section> 
-                        </section>
-                 <section id="content-tab2">
-                        <section class="content__main portfolio">
-                                <div class="gamer"></div>
-                                <div class="buttom-wrap">
-                                    <span class="button">Начать игру заново</span>
-                                </div>
-                                <div class="board"></div>
-                        </section>
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2" title="Крестики&Нолики">Крестики&Нолики</label>
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3" title="Змейка">Змейка</label>
+            <section id="content-tab1">
+                <section class="content__main">
+                    <section class="content__item">
+                        <div class="marker work--marker">
+                            <h2>Опыт работы</h2>
+                        </div>
+                        <div class="content__item--info">
+                            <ul class="list work--list">
+                                <li><p><b>Консультант&nbsp;1С</b></p></li>
+                            </ul>
+                            <div class="content--info"></div>
+                            <p>
+                                Обязанности:<br>
+                                1.Консультирование клиентов по программе 1С<br>
+                                2.Установка программы и её настройка<br>
+                                3.Установка дополнительных сервисов от компании 1С и консультирование по этим сервисам<br>
+                                4.Исправление проблем в работе баз клиентов<br>
+                                5.Обновление программ<br>
+                                6.Заполнение отчетов о выполненной работе<br>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="content__item">
+                        <div class="marker education--marker">
+                            <h2>Образования</h2>
+                        </div>
+                        <div class="content__item--info">
+                            <ul class="list education1--list">
+                                <li><p><b>Дальневосточный федеральный университет (ДВФУ)</b></p></li>
+                            </ul>
+                            <div class="content--info">
+                                <p>Бакалавриат</p>
+                            </div>
+                        </div>
+                        <div class="content__item--info">
+                            <ul class="list education2--list">
+                                <li><p><b>Дальневосточный федеральный университет (ДВФУ)</b></p></li>
+                            </ul>
+                            <div class="content--info">
+                                <p>Магистратура</p>
+                            </div>
+                        </div>
+                        <div class="content__item--info">
+                            <ul class="list education3--list">
+                                <li><p><b>GeekBrains</b></p></li>
+                            </ul>
+                            <div class="content--info">
+                                <p>
+                                    1.HTML/CSS<br>
+                                    2.JavaScript. Уровень 1<br>
+                                    3.AngularJS/D3.js<br>
+                                    4.PHP. Уровень 1<br>
+                                    5.Основы веб-дизайна<br>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content__item">
+                        <div class="marker skills--marker">
+                            <h2>Профессиональные качества</h2>
+                        </div>
+                        <!--skills-->
+                        <div class="item__skills">
+                            <div class="item--skills"><p>HTML5&CSS3</p></div>
+                            <div class="item--skills"><p>JavaScript</p></div>
+                            <div class="item--skills"><p>PHP</p></div>
+                            <div class="item--skills"><p>Bootstrap</p></div>
+                            <div class="item--skills"><p>Less</p></div>
+                            <div class="item--skills"><p>jQuery</p></div>
+                            <div class="item--skills"><p>1C: Бухгалтерия</p></div>
+                            <div class="item--skills"><p>1С: Зарплата и управление персоналом</p></div>
+                            <div class="item--skills"><p>Администрирование и установка 1C</p></div>
+                            <div class="item--skills"><p>Настройка ПК</p></div>
+                            <div class="item--skills"><p>Желание учиться</p></div>
+                        </div>
+                        <!--/skills-->
+                    </section>
+                </section> 
+            </section>
+            <section id="content-tab2">
+                 <section class="content__main portfolio">
+                    <div class="gamer"></div>
+                    <div class="buttom-wrap">
+                        <span class="button">Начать игру заново</span>
+                    </div>
+                    <div class="board"></div>
                 </section>
             </section>
+            <section id="content-tab3">
+                <section class="content__main portfolio">
+                    <div class="wrap">
+                        <div class="buttons">
+                            <div class="snake-start">Старт</div>
+                            <div class="snake-renew">Новая игра</div>
+                        </div>
+                        <div id="snake-field"></div>
+                        <div class="score">
+                            <span class="score-text">Счет: </span><span class="score-point"></span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
     <!--/content-->
     </content>
 </body>

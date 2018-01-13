@@ -111,6 +111,7 @@ p {
 }
 .content__main.portfolio {
   display: block;
+  padding-top: 10px;
 }
 .content__main::-webkit-scrollbar {
   width: 0px;
@@ -287,9 +288,9 @@ p {
   margin-top: 10px;
   padding: 15px 25px;
   text-align: center;
-  color: #fff;
+  color: #4b5eaa;
   border-radius: 19px ;
-  background: #4b5eaa;
+  background: #fff;
   border: 0px solid #4b5eaa;
   border-width: 1px 1px 1px 1px;
 }
@@ -305,8 +306,8 @@ p {
 }
 /* Стили для активной вкладки */
 .tabs > input:checked + label {
-  color: #4b5eaa;
-  background: #fff;
+  color: #fff;
+  background: #4b5eaa;
 }
 /* Активация секций с помощью псевдокласса :checked */
 #tab1:checked ~ #content-tab1,
@@ -354,5 +355,51 @@ p {
   color: white;
 }
 .buttom-wrap {
+  text-align: center;
+}
+#snake-field {
+  display: inline-block;
+}
+.snake-renew,
+.snake-start,
+.snake-start-nonactive {
+  width: 140px;
+  padding: 15px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+}
+.snake-start,
+.snake-start-nonactive {
+  margin-right: 10px;
+}
+.snake-start-nonactive {
+  background-color: #005300;
+}
+.game-table {
+  border-collapse: collapse;
+  background-color: #3e3e3e;
+}
+td.game-table-cell {
+  width: 15px;
+  height: 15px;
+  border: 1px dotted #eee;
+}
+.snake-unit {
+  background-color: white;
+}
+.food-unit {
+  background-color: red;
+}
+.problem-unit {
+  background-color: aqua;
+}
+.buttons {
+  display: inline-block;
+}
+.wrap {
+  margin: 30px auto 0;
   text-align: center;
 }

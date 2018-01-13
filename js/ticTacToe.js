@@ -1,5 +1,3 @@
-
-
 var board = document.getElementsByClassName('board')[0], // Игровое поле
     player = document.getElementsByClassName('gamer')[0], // Строка хода
     element, innerElement,
@@ -52,9 +50,9 @@ function tableClick() {
             }
         }
     }
-    else {
+/*    else {
         alert('Недопустимый ход');
-    }
+    }*/
 }
 
 /**
