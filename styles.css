@@ -348,13 +348,6 @@ p {
   align-content: flex-start;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 769px) {
-  .item--skills > p {
-    text-align: center;
-    font-size: 2vw;
-    padding: 5px;
-  }
-}
 /* Стили секций с содержанием */
 .tabs {
   text-align: center;
@@ -476,8 +469,8 @@ p {
 }
 @media screen and (max-width: 769px) {
   .board {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     padding-bottom: 20px;
   }
 }
