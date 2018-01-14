@@ -3,7 +3,7 @@ var FIELD_SIZE_X = 20;
 var FIELD_SIZE_Y = 20;
 var SNAKE_SPEED = 300;      // Интервал между перемещениями змейки
 var FOOD_SPEED = 5000;      // Интервад между созданием еды
-var PROBLEM_SPEED = 5000;   // интервал межуд созданием проблем =)
+var PROBLEM_SPEED = 10000;   // интервал между созданием преград =)
 var snake = [];             // Сама змейка
 var direction = 'y+';       // Направление движения змейки
 var gameIsRunning = false;  // Запущена ли игра
@@ -32,7 +32,8 @@ function init() {
     btnRenew.addEventListener('click', refreshGame);
 
 // Отслеживание клавиш клавиатуры
-    addEventListener('keydown', changeDirection);
+    //addEventListener('keydown', changeDirection);
+    document.getElementById('snake-field').addEventListener('touchstart', changeDirectionTouch);
 }
 
 /**
@@ -289,10 +290,37 @@ function createProblem() {
 
 /**
  * Изменение направления движения змейки
- * @param e - событие
+ * @param d - событие
  */
-function changeDirection(e) {
-    switch (e.keyCode) {
+function changeDirectionTouch(d){
+    touch = d.changedTouches[0];
+    x = touch.pageX;
+    y = touch.pageY;
+
+    if (x<210){
+        direction = 'x-';
+        console.log('Влево');
+    }
+
+    if (x>210){
+        direction = 'x+';
+        console.log('Вправо');
+    }
+
+    if (y<1530){
+        direction = 'y+';
+        console.log('Ввверх');
+    }
+
+    if (y>1530){
+        direction = 'y-';
+        console.log('Вниз');
+    }
+
+}
+
+/*function changeDirection(e) {
+    switch (keyCode) {
         case 37: // Клавиша влево
             if (direction != 'x+') {
                 direction = 'x-'
@@ -314,7 +342,7 @@ function changeDirection(e) {
             }
             break;
     }
-}
+}*/
 
 /**
  * Функция завершения игры

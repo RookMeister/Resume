@@ -15,6 +15,20 @@ h2 {
 p {
   font-size: 18px;
 }
+@media screen and (max-width: 720px) {
+  body {
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  h2 {
+    font-size: 8vw;
+  }
+  p {
+    font-size: 5vw;
+  }
+}
 .header {
   height: 200px;
   width: 100%;
@@ -44,6 +58,9 @@ p {
 .header__info > p {
   font-size: 24px;
 }
+.header__contacts {
+  display: block;
+}
 .header__contacts--list {
   list-style-type: none;
   height: 30px;
@@ -58,6 +75,22 @@ p {
   width: 18px;
   vertical-align: middle;
   margin-right: 20px;
+}
+@media screen and (max-width: 720px) {
+  .header {
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .header__avatar {
+    margin-top: 5px;
+  }
+  .header__info {
+    padding: 20px;
+  }
+  .header__contacts {
+    display: none;
+  }
 }
 .sidebar {
   display: flex;
@@ -97,9 +130,14 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (max-width: 720px) {
+  .sidebar {
+    width: 100%;
+  }
+}
 .content {
   display: flex;
-  width: 1400px;
+  width: auto;
 }
 .content__main {
   display: flex;
@@ -126,6 +164,39 @@ p {
 .content__item--info {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 720px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .content__main {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .content__item {
+    text-align: center;
+    padding: 5% 5% 0 5%;
+  }
+  .content--info {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .content__item--info {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }
 .list {
   list-style-image: url(img/circle.png);
@@ -168,6 +239,13 @@ p {
 .list.education3--list:after {
   content: "Веб-Разработчик";
   color: #666;
+}
+@media screen and (max-width: 720px) {
+  .list {
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+  }
 }
 .marker {
   display: flex;
@@ -223,8 +301,16 @@ p {
   height: 50px;
   border-radius: 50%;
   display: inline-block;
-  background-size: 50%;
   background: #4b5eaa;
+}
+@media screen and (max-width: 720px) {
+  .marker {
+    padding: 0 5% 5% 5%;
+    justify-content: center;
+  }
+  .marker:before {
+    display: none;
+  }
 }
 .item--skills {
   margin: 5px;
@@ -248,6 +334,12 @@ p {
 .tabs {
   text-align: center;
   width: auto;
+}
+@media screen and (max-width: 720px) {
+  .tabs {
+    text-align: center;
+    width: 100%;
+  }
 }
 .tabs > section {
   display: none;
@@ -296,7 +388,6 @@ p {
 }
 /* Шрифт-иконки от Font Awesome в формате Unicode */
 .tabs > label:before {
-  font-family: fontawesome;
   font-weight: normal;
 }
 /* Изменения стиля переключателей вкладок при наведении */
@@ -356,6 +447,13 @@ p {
 }
 .buttom-wrap {
   text-align: center;
+}
+@media screen and (max-width: 720px) {
+  .board {
+    width: 400px;
+    height: 400px;
+    padding-bottom: 20px;
+  }
 }
 #snake-field {
   display: inline-block;

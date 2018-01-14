@@ -31,6 +31,8 @@
     }
 
     &__contacts{
+        display: block;
+
         &--list{
             list-style-type: none;
             height: 30px;
@@ -47,6 +49,26 @@
                 vertical-align: middle;
                 margin-right: 20px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header{
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+
+        &__avatar{
+            margin-top: 5px;
+        }
+
+        &__info{
+            padding: 20px;
+        }
+
+        &__contacts{
+            display: none;
         }
     }
 }

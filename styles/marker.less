@@ -59,6 +59,16 @@
     height: 50px;
     border-radius: 50%;
     display: inline-block;
-    background-size: 50%;
     background: #4b5eaa;
+}
+
+@media screen and (max-width: 720px) {
+    .marker{
+        padding: 0 5% 5% 5%;
+        justify-content: center;
+    }
+
+    .marker:before{
+        display: none;
+    }
 }
