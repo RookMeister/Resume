@@ -94,7 +94,7 @@ p {
     margin-top: 5px;
   }
   .header__info {
-    padding: 10px;
+    padding: 5%;
   }
   .header__contacts {
     display: none;
@@ -113,10 +113,8 @@ p {
 .sidebar__interested {
   list-style: none;
   text-align: center;
-  padding: 10px;
-  width: 33%;
-}
-.sidebar__interested > p {
+  padding: 10px 0;
+  width: 33.3%;
   word-wrap: break-word;
 }
 .sidebar__interested:before {
@@ -517,6 +515,5 @@ td.game-table-cell {
   display: inline-block;
 }
 .wrap {
-  margin: 30px auto 0;
   text-align: center;
 }
