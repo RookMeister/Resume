@@ -20,7 +20,6 @@
         height: 80px;
         border-radius: 50%;
         display: inline-block;
-        background-size: 50%;
         border: 2px solid #4b5eaa;
     }
 
@@ -46,5 +45,10 @@
 @media screen and (max-width: 720px) {
     .sidebar{
         width: 100%;
+        justify-content: center;
+
+        &__interested>b{
+            font-size: 14px;
+        }
     }
 }

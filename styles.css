@@ -28,6 +28,9 @@ p {
   p {
     font-size: 5vw;
   }
+  b {
+    font-size: 5vw;
+  }
 }
 .header {
   height: 200px;
@@ -112,7 +115,6 @@ p {
   height: 80px;
   border-radius: 50%;
   display: inline-block;
-  background-size: 50%;
   border: 2px solid #4b5eaa;
 }
 .sidebar__interested.code:before {
@@ -133,6 +135,10 @@ p {
 @media screen and (max-width: 720px) {
   .sidebar {
     width: 100%;
+    justify-content: center;
+  }
+  .sidebar__interested > b {
+    font-size: 14px;
   }
 }
 .content {
@@ -181,6 +187,7 @@ p {
     overflow-y: hidden;
   }
   .content__item {
+    justify-content: center;
     text-align: center;
     padding: 5% 5% 0 5%;
   }
@@ -306,6 +313,7 @@ p {
 @media screen and (max-width: 720px) {
   .marker {
     padding: 0 5% 5% 5%;
+    text-align: center;
     justify-content: center;
   }
   .marker:before {
