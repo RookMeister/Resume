@@ -11,6 +11,7 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
+        display: inline-block;
         background: url(img/avatar.jpg) no-repeat;
         background-size: auto 150px;
     }
@@ -57,14 +58,15 @@
     .header{
         height: auto;
         width: 100%;
-        flex-wrap: wrap;
+        display: block;
+        text-align: center;
 
         &__avatar{
             margin-top: 5px;
         }
 
         &__info{
-            padding: 20px;
+            padding: 10px;
         }
 
         &__contacts{

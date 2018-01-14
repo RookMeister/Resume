@@ -32,8 +32,8 @@ function init() {
     btnRenew.addEventListener('click', refreshGame);
 
 // Отслеживание клавиш клавиатуры
-    //addEventListener('keydown', changeDirection);
-    document.getElementById('snake-field').addEventListener('touchstart', changeDirectionTouch);
+    addEventListener('keydown', changeDirection);
+    //document.getElementById('snake-field').addEventListener('touchstart', changeDirectionTouch);
 }
 
 /**
@@ -292,7 +292,7 @@ function createProblem() {
  * Изменение направления движения змейки
  * @param d - событие
  */
-function changeDirectionTouch(d){
+/*function changeDirectionTouch(d){
     touch = d.changedTouches[0];
     x = touch.pageX;
     y = touch.pageY;
@@ -316,10 +316,9 @@ function changeDirectionTouch(d){
         direction = 'y-';
         console.log('Вниз');
     }
+}*/
 
-}
-
-/*function changeDirection(e) {
+function changeDirection(e) {
     switch (keyCode) {
         case 37: // Клавиша влево
             if (direction != 'x+') {
@@ -342,7 +341,7 @@ function changeDirectionTouch(d){
             }
             break;
     }
-}*/
+}
 
 /**
  * Функция завершения игры

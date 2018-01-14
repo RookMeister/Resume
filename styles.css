@@ -28,9 +28,6 @@ p {
   p {
     font-size: 5vw;
   }
-  b {
-    font-size: 5vw;
-  }
 }
 .header {
   height: 200px;
@@ -45,6 +42,7 @@ p {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  display: inline-block;
   background: url(img/avatar.jpg) no-repeat;
   background-size: auto 150px;
 }
@@ -83,13 +81,14 @@ p {
   .header {
     height: auto;
     width: 100%;
-    flex-wrap: wrap;
+    display: block;
+    text-align: center;
   }
   .header__avatar {
     margin-top: 5px;
   }
   .header__info {
-    padding: 20px;
+    padding: 10px;
   }
   .header__contacts {
     display: none;
