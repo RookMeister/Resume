@@ -294,8 +294,8 @@ function createProblem() {
  */
 function changeDirectionTouch(d){
     touch = d.changedTouches[0];
-    x = touch.positionX;
-    y = touch.positionY;
+    x = touch.pageX;
+    y = touch.pageY;
     console.log(x,y);
 
     if (x<210){
