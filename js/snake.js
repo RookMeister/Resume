@@ -20,11 +20,11 @@ function init() {
     points.innerHTML = score;
     var wrap = document.getElementsByClassName('wrap')[0];
     // Подгоняем размер контейнера под игровое поле
-    if (16 * (FIELD_SIZE_X + 1) < 320) {
+    if (16 * (FIELD_SIZE_X) < 320) {
         wrap.style.width = '320px';
     }
     else {
-        wrap.style.width = (16 * (FIELD_SIZE_X + 1)).toString() + 'px';
+        wrap.style.width = (16 * (FIELD_SIZE_X)).toString() + 'px';
     }
 
     // События кнопок Старт и Новая игра
