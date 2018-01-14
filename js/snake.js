@@ -33,7 +33,7 @@ function init() {
 
 // Отслеживание клавиш клавиатуры
     addEventListener('keydown', changeDirection);
-    //document.getElementById('snake-field').addEventListener('touchstart', changeDirectionTouch);
+    document.getElementById('snake-field').addEventListener('touchstart', changeDirectionTouch);
 }
 
 /**
@@ -292,7 +292,7 @@ function createProblem() {
  * Изменение направления движения змейки
  * @param d - событие
  */
-/*function changeDirectionTouch(d){
+function changeDirectionTouch(d){
     touch = d.changedTouches[0];
     x = touch.pageX;
     y = touch.pageY;
@@ -316,10 +316,10 @@ function createProblem() {
         direction = 'y-';
         console.log('Вниз');
     }
-}*/
+}
 
 function changeDirection(e) {
-    switch (keyCode) {
+    switch (e.keyCode) {
         case 37: // Клавиша влево
             if (direction != 'x+') {
                 direction = 'x-'
