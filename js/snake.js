@@ -294,25 +294,26 @@ function createProblem() {
  */
 function changeDirectionTouch(d){
     touch = d.changedTouches[0];
-    x = touch.pageX;
-    y = touch.pageY;
+    x = touch.position.x;
+    y = touch.position.y;
+    console.log(x,y);
 
     if (x<210){
         direction = 'x-';
         console.log('Влево');
     }
 
-    if (x>210){
+    else if (x>210){
         direction = 'x+';
         console.log('Вправо');
     }
 
-    if (y<1530){
+    else if (y<1530){
         direction = 'y+';
         console.log('Ввверх');
     }
 
-    if (y>1530){
+    else if (y>1530){
         direction = 'y-';
         console.log('Вниз');
     }
