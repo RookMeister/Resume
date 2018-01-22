@@ -98,14 +98,12 @@ p {
   }
 }
 .sidebar {
-  display: flex;
   flex-wrap: wrap;
   width: 450px;
   background: #fbfbfb;
 }
 .sidebar__list {
   display: flex;
-  justify-content: center;
 }
 .sidebar__interested {
   list-style: none;
@@ -160,8 +158,9 @@ p {
   overflow-y: scroll;
 }
 .content__main.portfolio {
-  display: block;
+  display: flex;
   padding-top: 10px;
+  justify-content: center;
 }
 .content__main::-webkit-scrollbar {
   width: 0px;
@@ -266,7 +265,6 @@ p {
 .marker.interested--marker:before {
   margin-right: 20px;
   background-image: url(img/inter.png);
-  background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
@@ -409,6 +407,9 @@ p {
 #tab2:checked ~ #content-tab2,
 #tab3:checked ~ #content-tab3,
 #tab4:checked ~ #content-tab4 {
+  display: block;
+}
+.tictactoe {
   display: block;
 }
 .gamer {
